@@ -15,30 +15,6 @@ If you don't have Pip, find it here: http://pypi.python.org/pypi/pip
 
 Edit the **bitcharts/settings.py** file to set database connection string parameters, Celery broker configuration and mail settings for notifications.
 
-```python
-# Database settings
-MYSQL_USERNAME = ''
-MYSQL_PASSWORD = ''
-MYSQL_HOSTNAME = 'localhost'
-MYSQL_PORT = '3306'
-MYSQL_DATABASE = 'bitcharts'
-
-# Celery settings
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
-CELERY_TIMEZONE = 'America/Argentina/Buenos_Aires'
-
-# Email notifications
-ENABLE_MAIL_NOTIFICATIONS = False
-MAIL_SERVER = ''
-MAIL_PORT = 465
-MAIL_USE_TLS = False
-MAIL_USE_SSL = True
-MAIL_USERNAME = ''
-MAIL_PASSWORD = ''
-ADMINS = ['admin@domain.com']
-```
-
 ### Initialize database
 
     python manage database create
